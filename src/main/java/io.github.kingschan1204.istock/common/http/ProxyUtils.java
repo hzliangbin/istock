@@ -50,7 +50,7 @@ public final class ProxyUtils {
             if (sb.toString().contains("baidu.com") && connection.getResponseCode() == 200) {
                 available = true;
             }
-            log.info("validateHttp ==> ip:{} port:{} info:{}", ip, port, connection.getResponseMessage());
+//            log.info("validateHttp ==> ip:{} port:{} info:{}", ip, port, connection.getResponseMessage());
         } catch (Exception e) {
             //e.printStackTrace();
             available = false;
@@ -86,7 +86,7 @@ public final class ProxyUtils {
             if (sb.toString().contains("baidu.com") && httpsURLConnection.getResponseCode() == 200) {
                 available = true;
             }
-            log.info("validateHttps ==> ip:{} port:{} info:{}", ip, port, httpsURLConnection.getResponseMessage());
+//            log.info("validateHttps ==> ip:{} port:{} info:{}", ip, port, httpsURLConnection.getResponseMessage());
         } catch (Exception e) {
             e.printStackTrace();
             available = false;
